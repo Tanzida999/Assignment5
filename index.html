@@ -6,59 +6,120 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-<title></title>
+<title>Ticket Center</title>
 </head>
 <body class=" bg-white">
+ <main>
+   <!-- Ticketing Start -->
+   <section id="start">
     <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <a class="btn btn-ghost font-bold bg- text-4xl">P-Ticket</a>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li>
-             
-            </li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
-            
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="btn border-lime-500 text-lime-500">Bus 
-            <img src="images/bus-icon.png" alt=""> </a>
-        </div>
+        <a class="btn btn-ghost font-bold bg- text-4xl">Dead-Ticket</a>
       </div>
-      <div class="flex justify-center items-center h-96 max-w-6xl bg-center bg-no-repeat bg-contain relative" style="background-image: url('images/banner.png');">
-        <div class="text-center text-white">
-          <p class="text-white text-4xl font-bold">End-to-End Travel with <br><span class="text-lime-500">P Paribahan</span></p>
-          <p class="text-white">Have a safe journey with us.</p>
-          <button class="btn  bg-lime-500 text-black">Buy Tickets</button>
-        </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li>
+           
+          </li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+          
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn border-lime-500 text-lime-500">Bus 
+          <img src="images/bus-icon.png" alt=""> </a>
+      </div>
+    </div>
+    <div class="flex justify-center items-center h-96 max-w-6xl bg-center bg-no-repeat bg-contain relative" style="background-image: url('images/banner.png');">
+      <div class="text-center text-white">
+        <p class="text-white text-4xl font-bold">End-to-End Travel with <br><span class="text-lime-500">P Paribahan</span></p>
+        <p class="text-white">Have a safe journey with us.</p>
+        <button onclick="play()" id="buy-ticket" class="btn  bg-lime-500 text-black">Buy Tickets</button>
+      </div>
+    </div>
+    
+  </div>
+ 
+     <!-- Discount -->
+    
+     <div class="flex flex-col justify-center items-center gap-4">
+      <p id="discount" class="flex justify-center items-center pt-12 text-4xl text-black gap-4">Best Offers For You</p>
+      <!-- <div class="flex justify-center items-center gap-4" style="background-image: url('images/Group115.png');">
+      
+      <img src="images/Rectangle 8 (1).png" alt="">
+     
+        
+    </div> -->
+    <div class=" flex justify-center items-center gap-4 ">
+      <img src="images/Group 113.png" alt="">
+      <img src="images/Rectangle 8 (1).png" alt="">
+      
+
+    </div>
+      <button class="btn text-lime-500 bg-white border border-lime-500 gap-4 py-4 ">See all Offers</button>
+
+    </div>
+   </section>
+<!-- Main SEction  -->
+   <section id="main" class="" >
+    <div>
+      <p class=" flex text-3xl text-black justify-center items-center pt-12">Dead Paribahan</p>
+      <P class=" flex justify-center items-center">Have a safe journey with us. And get a nice experience with us for having the ticket system. </P>
+    </div>
+
+   <div>
+    <div class="flex justify-center items-center gap-4 pt-12 ">
+      <img class="" src="images/bus-logo.png" alt="">
+      <div class=" flex flex-col">
+        <p class="text-black text-2xl">Dead Buslines</p>
+      <p>Coach-08-WEB| AC, Business</p>
+      <p class="text-xl">Route</p>
+      <p class="text-xl">Departure Time</p>
+      </div>
+      <div class="flex flex-col">
+        <button class="btn text-lime-500 bg-lime-100 border-transparent"><img src="images/seat-green.png" alt=""> 40 Seats Left</button>
+      <p>Dhaka-Sylhet</p>
+      <p>9.00 PM</p>
       </div>
       
     </div>
-    <div class="">
-      <p class="text-black justify-center items-center font-bold">Best Offers For You</p>
-      <div class=" h-44 w-96 bg-amber-400"></div>
-      <div class=" h-44 w-96 bg-pink-500"></div>
-
+    <div class="flex justify-center items-center">
+      <p>Boarding Point -Laxmipur</p> <p>Droping Point-Bogura</p>
+      <p> Est. Time - 11Hour</p>
     </div>
+    
+   </div>
+   <div> 
+    <img src="images/fare.png" alt="">
+    <p class="text-4xl text-black">550 Taka</p>
+    <p class="text-2xl">per seat</p>
+   </div>
+
+   </section>
       
 
 
+ </main>
+ <script src="scripts/p-ticket.js"></script>
+ <script src="scripts/utility.js"></script>
 </body>
+
+
+
+<!-- Footer -->
 <footer class="footer p-10 bg-neutral text-neutral-content">
   <aside>
     
-    <p class="text-white font-bold text-xl">P-Ticket</p>
+    <p class="text-white font-bold text-xl">Dead-Ticket</p>
     <p>p-ticket is dynamic and smart ticket buying system where we care about <br> your comfort and safety.</p>
   </aside> 
   <nav>
